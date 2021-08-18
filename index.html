@@ -13,9 +13,10 @@
 <body bgcolor="wheat">
     <h1>Which Part Of Decimal Is Greater? 🙄</h1>
     <p>Press F5 to Refresh <i class="fas fa-redo"></i></p>
+    <p id="greater"></p>
     <script>
      function partGreater(num) {
-       alert("The number is "+num+" and "+Math.max.apply(this, num.toString().split('.'))+" is greater part of the number.);
+       document.getInputById(#greater).innerHTML= "The number is "+num+" and "+Math.max.apply(this, num.toString().split('.'))+" is greater part of the number.";
     }
 var num = prompt("enter a decimal number");
 partGreater(num);
