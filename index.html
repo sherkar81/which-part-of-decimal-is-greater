@@ -11,11 +11,12 @@
 <body>
     <script>
      function a(num) {
-      var x = String(num).split(',');
-      document.write(x[0] > x[1] ? "x[0]" : "x[1]");
+       
+       var x = String(num).split(',');
+      alert(x[0] > x[1] ? "x[0]" : "x[1]");
     }
-
-a(23.43);
+var num = prompt("enter a decimal number");
+a(num);
    </script>
 </body>
 
