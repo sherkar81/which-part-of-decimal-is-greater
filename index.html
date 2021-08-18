@@ -12,18 +12,13 @@
 
 <body bgcolor="wheat">
     <h1>Which Part Of Decimal Is Greater? 🙄</h1>
-    <p>Press F5 to Refresh <i class="fas fa-redo"></i>
-
-</p>
+    <p>Press F5 to Refresh <i class="fas fa-redo"></i></p>
     <script>
-     function a(num) {
-       
-       var x = String(num).split(',');
-      alert(x[0] > x[1] ? 'First part is greater' : 'Second part is greater');
+     function partGreater(num) {
+       alert(Math.max.apply(this, num.toString().split('.')));
     }
 var num = prompt("enter a decimal number");
-a(num);
+partGreater(num);
    </script>
 </body>
-
 </html>
